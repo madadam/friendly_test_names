@@ -1,0 +1,44 @@
+Friendly test names
+===================
+
+What is it?
+-----------
+
+This tiny extension for test/unit allows you to write this:
+
+  class LolCatTest < Test::Unit::TestCase
+    test 'can haz cheeseburger' do
+      assert @lolcat.can_haz_cheeseburger?
+    end
+  end
+
+instead of this:
+
+  class LoLCatTest < Test::Unit::TestCase
+    def test_can_haz_cheeseburger do
+      assert @lolcat.can_haz_cheeseburger?
+    end
+  end
+
+Nothing more, nothing less.
+
+
+How to use it?
+--------------
+
+Just require "friendly_test_names" in your test. Done.
+
+
+But <insert your favorite test tool> does this plus much more!
+-------------------------------------------------------------
+
+Yes, but I don't want much more. I don't want contexts, fancy macros or
+rspec-esque pseudo plain language DSL. I want just friendly test name, nothing
+more.
+
+
+Legal
+-----
+
+Copyright 2011 Adam Cigánek. Distributed under the terms of Do What The Fuck
+You Want To Public Licence (WTFPL).
